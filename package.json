@@ -1,0 +1,19 @@
+{
+  "name": "padel-marketplace",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@10.17.1",
+  "scripts": {
+    "dev": "pnpm --filter @padel/mobile start",
+    "web": "pnpm --filter @padel/mobile web",
+    "typecheck": "pnpm --filter @padel/mobile typecheck",
+    "test": "tsx --test packages/domain/src/*.test.ts",
+    "build": "pnpm --filter @padel/mobile build"
+  },
+  "devDependencies": {
+    "@types/node": "22.18.0",
+    "@types/react": "19.2.0",
+    "tsx": "4.20.5",
+    "typescript": "5.9.2"
+  }
+}
